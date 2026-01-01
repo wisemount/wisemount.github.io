@@ -1,0 +1,465 @@
+:root {
+    --primary-color: #0066cc;
+    --primary-hover: #0052a3;
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --success-color: #28a745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.625rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.sector-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.sector-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.workflow-card {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.workflow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.workflow-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.trust-card {
+    transition: all 0.3s ease;
+}
+
+.trust-card:hover i {
+    transform: scale(1.1);
+}
+
+.trust-card i {
+    transition: transform 0.3s ease;
+}
+
+.page-header {
+    padding: 3rem 0;
+}
+
+.service-detail,
+.sector-detail,
+.dpiit-criterion {
+    scroll-margin-top: 100px;
+}
+
+.service-icon-box,
+.sector-icon-card,
+.criterion-icon-box {
+    transition: all 0.3s ease;
+}
+
+.service-icon-box:hover,
+.sector-icon-card:hover,
+.criterion-icon-box:hover {
+    transform: scale(1.05);
+}
+
+.ai-capability-card {
+    transition: all 0.3s ease;
+}
+
+.ai-capability-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.workflow-badge {
+    display: inline-block;
+}
+
+.benefit-card,
+.limitation-card,
+.reason-card,
+.priority-card {
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover,
+.reason-card:hover,
+.priority-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pricing-card {
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.pricing-card .price {
+    color: var(--primary-color);
+}
+
+.pricing-card ul li i {
+    font-size: 1.1rem;
+}
+
+.contact-info-card {
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+footer {
+    background-color: var(--dark-bg);
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer a.text-white-50:hover {
+    color: #ffffff !important;
+}
+
+/* Transparent Navbar for Home Page */
+.navbar-transparent {
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.navbar-transparent.scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+.navbar-transparent.scrolled .navbar-brand span {
+    color: var(--primary-color) !important;
+}
+
+.navbar-transparent.scrolled .nav-link {
+    color: #6c757d !important;
+}
+
+.navbar-transparent.scrolled .nav-link:hover,
+.navbar-transparent.scrolled .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Carousel Styling - Full Width */
+.hero-carousel-section {
+    margin-top: -1px;
+}
+
+#heroCarousel .carousel-item img {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#heroCarousel .carousel-caption-overlay {
+    z-index: 2;
+}
+
+#heroCarousel h1 {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+#heroCarousel p,
+#heroCarousel h3 {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+#heroCarousel .carousel-indicators {
+    z-index: 3;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+    z-index: 3;
+    width: 10%;
+}
+
+/* Page Hero Banner - All Internal Pages */
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    z-index: 1;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Feature Cards - Modern Design */
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+    border-color: var(--primary-color);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stat Cards */
+.stat-card {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* Badge Styling */
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.bg-primary-subtle {
+    background-color: rgba(13,110,253,0.1) !important;
+}
+
+/* Section Spacing */
+section {
+    position: relative;
+}
+
+.py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* Typography Enhancements */
+.display-6 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    #heroCarousel .carousel-item img {
+        height: 100vh;
+        min-height: 500px;
+        max-height: 600px;
+    }
+    
+    #heroCarousel h1 {
+        font-size: 2rem;
+    }
+    
+    #heroCarousel .lead {
+        font-size: 1rem;
+    }
+    
+    #heroCarousel h3 {
+        font-size: 1.25rem;
+    }
+    
+    .page-hero {
+        padding: 80px 0 60px !important;
+    }
+    
+    .display-6 {
+        font-size: 1.75rem;
+    }
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075) !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    
+    .nav-link.btn-primary {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+}
+
+.alert {
+    border-radius: 0.5rem;
+}
+
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+    border-width: 2px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.btn-success {
+    background-color: #25d366;
+    border-color: #25d366;
+}
+
+.btn-success:hover {
+    background-color: #1faa52;
+    border-color: #1faa52;
+}
