@@ -1,280 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Build your business the right way. Simple solutions for everyday problems - licenses, sales, marketing, and growth support for startups and MSMEs.">
-    <meta name="keywords" content="MSME growth, startup development, business diagnostics, DPIIT, Startup India, sector playbooks">
-    <title>WiseMount Private Limited - AI-Powered Business Development Platform</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WiseMount - AI Products Built for Real-World Scale. We design and build proprietary AI platforms focused on automation, intelligence, and scalable deployment across enterprise use cases.">
+  <meta name="keywords" content="AI Products, AI Platforms, AI Agents, Artificial Intelligence, Machine Learning, Enterprise AI, WiseMount">
+  <meta name="author" content="WiseMount">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="WiseMount - AI Products Built for Real-World Scale">
+  <meta property="og:description" content="We design and build proprietary AI platforms focused on automation, intelligence, and scalable deployment across enterprise use cases.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://WiseMount.ai">
+  <meta property="og:image" content="assets/images/og-image.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WiseMount - AI Products Built for Real-World Scale">
+  <meta name="twitter:description" content="We design and build proprietary AI platforms focused on automation, intelligence, and scalable deployment across enterprise use cases.">
+  
+  <title>WiseMount | AI Products Built for Real-World Scale</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="canonical" href="https://WiseMount.ai/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WiseMount",
+    "url": "https://WiseMount.ai",
+    "logo": "https://WiseMount.ai/assets/images/logo.png",
+    "description": "AI Products Built for Real-World Scale. Proprietary AI platforms focused on automation, intelligence, and scalable deployment.",
+    "sameAs": ["https://twitter.com/WiseMount", "https://linkedin.com/company/WiseMount", "https://github.com/WiseMount"]
+  }
+  </script>
+  
+  <!-- Performance: Preconnect to external resources -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-transparent" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <span class="text-white">WiseMount</span> 
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="wm-skip-link">Skip to main content</a>
+  
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <nav class="wm-navbar navbar navbar-expand-lg">
+    <div class="container">
+      <a class="wm-navbar__brand navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="WiseMount" class="wm-navbar__logo" style="height: 80px;">
+        <span>WiseMount</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav wm-navbar__nav">
+          <li class="nav-item">
+            <a class="wm-navbar__link" href="#verticals">Platforms</a>
+          </li>
+          <li class="nav-item">
+            <a class="wm-navbar__link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="wm-navbar__link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="wm-navbar__link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="wm-navbar__link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="wm-btn wm-btn--primary" href="#contact">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+  <section class="wm-hero wm-section" id="hero" role="banner">
+    <div class="wm-hero__bg"></div>
+    <div class="wm-hero__grid"></div>
+    
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 wm-hero__content">
+          <h1 class="wm-hero__title" data-animate="fade-in-up">
+            Transforming Business with
+            <span class="wm-gradient-text-animated">Wiser AI</span>
+          </h1>
+          <p class="wm-hero__subtitle" data-animate="fade-in-up">
+            We design and build proprietary AI platforms focused on automation, intelligence, and scalable deployment across enterprise use cases.
+          </p>
+          <div class="wm-hero__actions" data-animate="fade-in-up">
+            <a href="#verticals" class="wm-btn wm-btn--primary wm-btn--lg">
+              <i class="bi bi-grid-3x3-gap me-2"></i>
+              Explore Platforms
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sectors.html">Sectors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ai-system.html">AI System</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="dpiit.html">DPIIT Readiness</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="contact.html">Contact</a></li>
-                </ul>
+            <a href="#contact" class="wm-btn wm-btn--secondary wm-btn--lg">
+              <i class="bi bi-calendar-check me-2"></i>
+              Book a Demo
+            </a>
+          </div>
+          
+          <!-- Trust indicators -->
+          <div class="mt-5 pt-4 border-top border-secondary" data-animate="fade-in-up">
+            <p class="text-muted small mb-3">Trusted by innovative companies worldwide</p>
+            <div class="d-flex flex-wrap gap-4 align-items-center opacity-50">
+              <span class="fs-5 fw-semibold">Enterprise</span>
+              <span class="fs-5 fw-semibold">TechCorp</span>
+              <span class="fs-5 fw-semibold">InnovateLabs</span>
+              <span class="fs-5 fw-semibold">FutureAI</span>
             </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Full-Width Hero Carousel Section -->
-    <section class="hero-carousel-section position-relative">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="position-relative" data-animate="scale-in">
+            <!-- Abstract AI visualization placeholder -->
+            <div class="wm-hero-visual p-5 text-center">
+              <div class="wm-glass rounded-4 p-5">
+                <i class="bi bi-cpu-fill display-1 wm-gradient-text mb-4 d-block"></i>
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                  <span class="badge bg-primary bg-opacity-25 text-primary px-3 py-2">ML</span>
+                  <span class="badge bg-purple bg-opacity-25 px-3 py-2" style="color: var(--wm-accent-purple); background: rgba(139, 92, 246, 0.2);">NLP</span>
+                  <span class="badge bg-orange bg-opacity-25 px-3 py-2" style="color: var(--wm-accent-orange); background: rgba(249, 115, 22, 0.2);">Vision</span>
+                </div>
+                <div class="small text-muted">Powered by Advanced AI</div>
+              </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=800&fit=crop" class="d-block w-100" alt="Mountain Peak - Reach New Heights">
-                    <div class="carousel-caption-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0,0,0,0.4);">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 col-xl-6 text-white">
-                                    <h1 class="display-3 fw-bold mb-4">Build Your Business.<br>The Right Way.</h1>
-                                    <p class="lead mb-4 fs-4">Simple solutions for everyday business problems. From licenses to sales, we help you take the next step.</p>
-                                    <h3 class="fw-bold text-warning mb-4">Start Small. Think Big.</h3>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
-                                        <a href="contact.html" class="btn btn-light btn-lg">Talk to Us</a>
-                                    </div>
-                                    <div class="mt-4">
-                                        <small class="text-white-50">
-                                            <i class="bi bi-shield-check me-1"></i> DPIIT-aligned • Startup India Ready • MSME Trusted
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1920&h=800&fit=crop" class="d-block w-100" alt="Mountain Range - Build Strong Foundations">
-                    <div class="carousel-caption-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0,0,0,0.4);">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 col-xl-6 text-white">
-                                    <h1 class="display-3 fw-bold mb-4">Build Your Business.<br>The Right Way.</h1>
-                                    <p class="lead mb-4 fs-4">Simple solutions for everyday business problems. From licenses to sales, we help you take the next step.</p>
-                                    <h3 class="fw-bold text-warning mb-4">Every Peak. One Step.</h3>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
-                                        <a href="contact.html" class="btn btn-light btn-lg">Talk to Us</a>
-                                    </div>
-                                    <div class="mt-4">
-                                        <small class="text-white-50">
-                                            <i class="bi bi-shield-check me-1"></i> DPIIT-aligned • Startup India Ready • MSME Trusted
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&h=800&fit=crop" class="d-block w-100" alt="Snow Mountain - Clear Path Forward">
-                    <div class="carousel-caption-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0,0,0,0.4);">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 col-xl-6 text-white">
-                                    <h1 class="display-3 fw-bold mb-4">Build Your Business.<br>The Right Way.</h1>
-                                    <p class="lead mb-4 fs-4">Simple solutions for everyday business problems. From licenses to sales, we help you take the next step.</p>
-                                    <h3 class="fw-bold text-warning mb-4">Your Growth. Our Guide.</h3>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
-                                        <a href="contact.html" class="btn btn-light btn-lg">Talk to Us</a>
-                                    </div>
-                                    <div class="mt-4">
-                                        <small class="text-white-50">
-                                            <i class="bi bi-shield-check me-1"></i> DPIIT-aligned • Startup India Ready • MSME Trusted
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">How We Work</h2>
-                <p class="text-muted">AI-enabled execution, not just consulting</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="workflow-card h-100 p-4 bg-white rounded shadow-sm">
-                        <div class="workflow-number">01</div>
-                        <h5 class="fw-semibold mt-3">Diagnostic</h5>
-                        <p class="text-muted mb-0">AI-powered assessment of your business readiness, gaps, and growth potential across operations, digital, and compliance.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="workflow-card h-100 p-4 bg-white rounded shadow-sm">
-                        <div class="workflow-number">02</div>
-                        <h5 class="fw-semibold mt-3">Playbook</h5>
-                        <p class="text-muted mb-0">Sector-specific growth roadmap with prioritized actions, timelines, and resource requirements tailored to your market.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="workflow-card h-100 p-4 bg-white rounded shadow-sm">
-                        <div class="workflow-number">03</div>
-                        <h5 class="fw-semibold mt-3">Execution</h5>
-                        <p class="text-muted mb-0">Expert orchestration through our network for compliance, digital systems, marketing, and operational implementation.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="workflow-card h-100 p-4 bg-white rounded shadow-sm">
-                        <div class="workflow-number">04</div>
-                        <h5 class="fw-semibold mt-3">Scale</h5>
-                        <p class="text-muted mb-0">Continuous monitoring, optimization, and expansion support as you grow revenue, team, and market presence.</p>
-                    </div>
-                </div>
-            </div>
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       VERTICALS SECTION — 8 AI Product/Service Verticals
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <section class="wm-section wm-section--tertiary wm-section--angled-top" id="verticals">
+    <div class="container">
+      <div class="wm-section__header">
+        <span class="wm-section__label">Our Platforms</span>
+        <h2 class="wm-section__title">
+          AI Products Built for <span class="wm-gradient-text">Real-World Scale</span>
+        </h2>
+        <p class="wm-section__subtitle">
+          We design and build proprietary AI platforms focused on automation, intelligence, and scalable deployment across enterprise use cases.
+        </p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Vertical 1: AI Automation Products -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/automation.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">01</span>
+            <i class="bi bi-gear-wide-connected wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Automation</h3>
+            <p class="wm-vertical-card__description">
+              Turnkey automation solutions that streamline operations, reduce costs, and accelerate business processes.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
         </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Why MSMEs Choose WiseMount</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="trust-card text-center p-4">
-                        <i class="bi bi-cpu fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-semibold">AI-Powered</h5>
-                        <p class="text-muted mb-0">Automated diagnostics and expert matching reduce time and cost while improving accuracy.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="trust-card text-center p-4">
-                        <i class="bi bi-diagram-3 fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-semibold">Multi-Sector</h5>
-                        <p class="text-muted mb-0">Deep expertise across six key sectors with proven playbooks and execution frameworks.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="trust-card text-center p-4">
-                        <i class="bi bi-check-circle fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-semibold">Execution Focus</h5>
-                        <p class="text-muted mb-0">Not just advice—we deliver systems, documents, and operational support for growth.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="trust-card text-center p-4">
-                        <i class="bi bi-graph-up fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-semibold">Outcome Driven</h5>
-                        <p class="text-muted mb-0">Clear deliverables, measurable milestones, and transparent progress tracking throughout.</p>
-                    </div>
-                </div>
-            </div>
+        
+        <!-- Vertical 2: AI Micro-SaaS -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/microsaas.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">02</span>
+            <i class="bi bi-boxes wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Micro-SaaS</h3>
+            <p class="wm-vertical-card__description">
+              Lightweight, focused AI-powered tools that solve specific problems with surgical precision and minimal overhead.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
         </div>
-    </section>
-
-    <section class="py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h2 class="fw-bold mb-3">Ready to Diagnose Your Business?</h2>
-                    <p class="mb-0 lead">Get a comprehensive business diagnostic report starting at ₹1,999</p>
-                </div>
-                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-                    <a href="contact.html" class="btn btn-light btn-lg">Get Started</a>
-                </div>
-            </div>
+        
+        <!-- Vertical 3: AI as a Service (AaaS) -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/aaas.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">03</span>
+            <i class="bi bi-cloud-arrow-up wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI as a Service</h3>
+            <p class="wm-vertical-card__description">
+              Powerful APIs and cloud-hosted AI capabilities ready to integrate into your existing infrastructure.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
         </div>
-    </section>
-
-    <footer class="py-5 bg-dark text-white">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3"><span class="text-primary">WiseMount</span> </h5>
-                    <p class="text-white-50">AI-powered business development platform for startups and MSMEs across multiple sectors.</p>
-                </div>
-                <div class="col-md-2">
-                    <h6 class="fw-semibold mb-3">Company</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
-                        <li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
-                        <li><a href="sectors.html" class="text-white-50 text-decoration-none">Sectors</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h6 class="fw-semibold mb-3">Platform</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="ai-system.html" class="text-white-50 text-decoration-none">AI System</a></li>
-                        <li><a href="pricing.html" class="text-white-50 text-decoration-none">Pricing</a></li>
-                        <li><a href="dpiit.html" class="text-white-50 text-decoration-none">DPIIT</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h6 class="fw-semibold mb-3">Contact</h6>
-                    <ul class="list-unstyled text-white-50 small">
-                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>info@wisemount.in</li>
-                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+91 89396 77189</li>
-                        <li><i class="bi bi-geo-alt me-2"></i>Tenkasi, Tamil Nadu</li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4 border-secondary">
-            <div class="text-center text-white-50">
-                <p class="mb-0">&copy; 2024 WiseMount Private Limited. All rights reserved.</p>
-            </div>
+        
+        <!-- Vertical 4: AI Content Studio -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/content-studio.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">04</span>
+            <i class="bi bi-brush wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Content Studio</h3>
+            <p class="wm-vertical-card__description">
+              Generate, optimize, and manage content at scale with AI-powered creative tools and workflows.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
         </div>
-    </footer>
+        
+        <!-- Vertical 5: AI Strategy Platform -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/consulting.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">05</span>
+            <i class="bi bi-lightbulb wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Strategy Platform</h3>
+            <p class="wm-vertical-card__description">
+              AI-powered strategy tools and frameworks to accelerate your digital transformation journey.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+        
+        <!-- Vertical 6: AI Training & Community -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/training.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">06</span>
+            <i class="bi bi-mortarboard wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Training</h3>
+            <p class="wm-vertical-card__description">
+              Education programs, workshops, and community building to upskill your team in AI technologies.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+        
+        <!-- Vertical 7: AI Tool Directory & Marketplace -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/marketplace.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">07</span>
+            <i class="bi bi-shop wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Marketplace</h3>
+            <p class="wm-vertical-card__description">
+              Curated directory of AI tools, models, and products from our ecosystem and trusted partners.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+        
+        <!-- Vertical 8: AI-Assisted Runbooks -->
+        <div class="col-md-6 col-lg-3" data-animate="fade-in-up">
+          <a href="pages/runbooks.html" class="wm-vertical-card">
+            <span class="wm-vertical-card__number">08</span>
+            <i class="bi bi-journal-code wm-vertical-card__icon"></i>
+            <h3 class="wm-vertical-card__title">AI Runbooks</h3>
+            <p class="wm-vertical-card__description">
+              Industry-specific playbooks and guides powered by AI for operational excellence.
+            </p>
+            <span class="wm-vertical-card__cta">
+              Learn More <i class="bi bi-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        // Navbar scroll effect for transparent navbar
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('mainNav');
-            if (navbar) {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                    navbar.classList.remove('navbar-dark');
-                    navbar.classList.add('navbar-light');
-                } else {
-                    navbar.classList.remove('scrolled');
-                    navbar.classList.remove('navbar-light');
-                    navbar.classList.add('navbar-dark');
-                }
-            }
-        });
-    </script>
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       FEATURES SECTION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <section class="wm-section wm-section--secondary" id="features">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="wm-section__label">Why WiseMount</span>
+          <h2 class="mb-4">
+            Built for <span class="wm-gradient-text">Enterprise Scale</span>
+          </h2>
+          <p class="wm-text-secondary mb-4">
+            We combine cutting-edge AI research with battle-tested engineering practices to deliver AI products that scale with your business.
+          </p>
+          <a href="#contact" class="wm-btn wm-btn--primary">
+            <i class="bi bi-arrow-right me-2"></i>
+            Start Your AI Journey
+          </a>
+        </div>
+        
+        <div class="col-lg-6 offset-lg-1">
+          <div class="row g-4">
+            <div class="col-md-6" data-animate="fade-in-up">
+              <div class="wm-feature">
+                <div class="wm-feature__icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div class="wm-feature__content">
+                  <h4 class="wm-feature__title">Enterprise Security</h4>
+                  <p class="wm-feature__description">SOC 2 compliant infrastructure with end-to-end encryption and data privacy controls.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-animate="fade-in-up">
+              <div class="wm-feature">
+                <div class="wm-feature__icon">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <div class="wm-feature__content">
+                  <h4 class="wm-feature__title">Lightning Fast</h4>
+                  <p class="wm-feature__description">Optimized inference engines delivering sub-second response times at scale.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-animate="fade-in-up">
+              <div class="wm-feature">
+                <div class="wm-feature__icon">
+                  <i class="bi bi-puzzle"></i>
+                </div>
+                <div class="wm-feature__content">
+                  <h4 class="wm-feature__title">Easy Integration</h4>
+                  <p class="wm-feature__description">RESTful APIs and SDKs for seamless integration with your existing tech stack.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-animate="fade-in-up">
+              <div class="wm-feature">
+                <div class="wm-feature__icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div class="wm-feature__content">
+                  <h4 class="wm-feature__title">Scalable Architecture</h4>
+                  <p class="wm-feature__description">Auto-scaling infrastructure that grows with your demands without downtime.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-animate="fade-in-up">
+              <div class="wm-feature">
+                <div class="wm-feature__icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <div class="wm-feature__content">
+                  <h4 class="wm-feature__title">Expert Support</h4>
+                  <p class="wm-feature__description">Dedicated AI specialists and 24/7 technical support for enterprise clients.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-animate="fade-in-up">
+              <div class="wm-feature">
+                <div class="wm-feature__icon">
+                  <i class="bi bi-globe2"></i>
+                </div>
+                <div class="wm-feature__content">
+                  <h4 class="wm-feature__title">Global Reach</h4>
+                  <p class="wm-feature__description">Multi-region deployment with localized AI models for global operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <section class="wm-section wm-section--primary wm-section--angled-top wm-section--angled-bottom" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="wm-glass rounded-4 p-5" data-animate="scale-in">
+            <div class="row g-4 text-center">
+              <div class="col-6">
+                <div class="display-4 fw-bold wm-gradient-text">50+</div>
+                <p class="text-muted mb-0">AI Products</p>
+              </div>
+              <div class="col-6">
+                <div class="display-4 fw-bold wm-gradient-text">500+</div>
+                <p class="text-muted mb-0">Clients Worldwide</p>
+              </div>
+              <div class="col-6">
+                <div class="display-4 fw-bold wm-gradient-text">99.9%</div>
+                <p class="text-muted mb-0">Uptime SLA</p>
+              </div>
+              <div class="col-6">
+                <div class="display-4 fw-bold wm-gradient-text">24/7</div>
+                <p class="text-muted mb-0">Expert Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-5 offset-lg-1">
+          <span class="wm-section__label">About WiseMount</span>
+          <h2 class="mb-4">
+            Pioneering the <span class="wm-gradient-text">AI Revolution</span>
+          </h2>
+          <p class="wm-text-secondary mb-4">
+            Founded by AI researchers and enterprise software veterans, WiseMount bridges the gap between cutting-edge AI research and real-world business applications.
+          </p>
+          <p class="wm-text-secondary mb-4">
+            Our mission is to democratize AI, making powerful intelligent systems accessible to organizations of all sizes. We believe that every company deserves access to world-class AI capabilities.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill" style="color: var(--wm-accent-purple);"></i>
+              <span>Research-Driven</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill" style="color: var(--wm-accent-purple);"></i>
+              <span>Enterprise-Ready</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill" style="color: var(--wm-accent-purple);"></i>
+              <span>Customer-Focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       TESTIMONIALS SECTION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <section class="wm-section wm-section--secondary" id="testimonials">
+    <div class="container">
+      <div class="wm-section__header">
+        <span class="wm-section__label">Testimonials</span>
+        <h2 class="wm-section__title">
+          Trusted by <span class="wm-gradient-text">Industry Leaders</span>
+        </h2>
+        <p class="wm-section__subtitle">
+          See what our clients say about their AI transformation journey with WiseMount.
+        </p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4" data-animate="fade-in-up">
+          <div class="wm-testimonial h-100">
+            <p class="wm-testimonial__quote">
+              WiseMount's AI automation platform reduced our operational costs by 40% in the first quarter. The implementation was seamless and the support team is exceptional.
+            </p>
+            <div class="wm-testimonial__author">
+              <div class="wm-testimonial__avatar">SK</div>
+              <div>
+                <div class="wm-testimonial__name">Sarah Kim</div>
+                <div class="wm-testimonial__role">CTO, TechVentures Inc.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4" data-animate="fade-in-up">
+          <div class="wm-testimonial h-100">
+            <p class="wm-testimonial__quote">
+              The AI Content Studio transformed our marketing workflow. We're now producing 5x more content with better engagement rates than ever before.
+            </p>
+            <div class="wm-testimonial__author">
+              <div class="wm-testimonial__avatar">MR</div>
+              <div>
+                <div class="wm-testimonial__name">Marcus Rodriguez</div>
+                <div class="wm-testimonial__role">VP Marketing, GlobalBrand</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4" data-animate="fade-in-up">
+          <div class="wm-testimonial h-100">
+            <p class="wm-testimonial__quote">
+              WiseMount's AI Strategy Platform helped us develop a clear roadmap for AI adoption. Their tools accelerated our digital transformation by years.
+            </p>
+            <div class="wm-testimonial__author">
+              <div class="wm-testimonial__avatar">EW</div>
+              <div>
+                <div class="wm-testimonial__name">Emily Watson</div>
+                <div class="wm-testimonial__role">CEO, InnovateTech</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       CTA / CONTACT SECTION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <section class="wm-section wm-section--tertiary wm-section--angled-top" id="contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="wm-section__label">Get Started</span>
+          <h2 class="mb-4">
+            Ready to <span class="wm-gradient-text">Transform</span> Your Business?
+          </h2>
+          <p class="wm-text-secondary mb-4">
+            Let's discuss how WiseMount can help you leverage AI to achieve your business goals. Our team of experts is ready to guide you through every step.
+          </p>
+          
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="wm-feature__icon" style="width: 48px; height: 48px; font-size: 20px;">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <div class="small text-muted">Email Us</div>
+                <a href="mailto:connect@wisemount.in" class="fw-semibold">connect@wisemount.in</a>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3">
+              <div class="wm-feature__icon" style="width: 48px; height: 48px; font-size: 20px;">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <div class="small text-muted">Headquarters</div>
+                <span class="fw-semibold">Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 offset-lg-1">
+          <div class="wm-card" data-animate="scale-in">
+            <h3 class="h4 mb-4">Send us a message</h3>
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="wm-form-group">
+                    <label class="wm-form-label" for="firstName">First Name</label>
+                    <input type="text" class="wm-form-input" id="firstName" placeholder="John" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="wm-form-group">
+                    <label class="wm-form-label" for="lastName">Last Name</label>
+                    <input type="text" class="wm-form-input" id="lastName" placeholder="Doe" required>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="wm-form-group">
+                <label class="wm-form-label" for="email">Work Email</label>
+                <input type="email" class="wm-form-input" id="email" placeholder="john@company.com" required>
+              </div>
+              
+              <div class="wm-form-group">
+                <label class="wm-form-label" for="company">Company</label>
+                <input type="text" class="wm-form-input" id="company" placeholder="Your Company">
+              </div>
+              
+              <div class="wm-form-group">
+                <label class="wm-form-label" for="interest">Interest</label>
+                <select class="wm-form-input" id="interest">
+                  <option value="">Select a platform...</option>
+                  <option value="automation">AI Automation Products</option>
+                  <option value="microsaas">AI Micro-SaaS</option>
+                  <option value="aaas">AI as a Service (APIs)</option>
+                  <option value="content">AI Content Studio</option>
+                  <option value="consulting">AI Strategy Platform</option>
+                  <option value="training">AI Training</option>
+                  <option value="marketplace">AI Marketplace</option>
+                  <option value="runbooks">AI Runbooks</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+              </div>
+              
+              <div class="wm-form-group">
+                <label class="wm-form-label" for="message">Message</label>
+                <textarea class="wm-form-textarea" id="message" placeholder="Tell us about your project or inquiry..." required></textarea>
+              </div>
+              
+              <button type="submit" class="wm-btn wm-btn--primary wm-btn--lg w-100">
+                <i class="bi bi-send me-2"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════════════════ -->
+  <footer class="wm-footer" role="contentinfo">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Column -->
+        <div class="col-lg-4 col-md-6">
+          <a href="#" class="wm-footer__brand">
+            <img src="assets/images/logo.png" alt="WiseMount" style="height: 72px;">
+            <span>WiseMount</span>
+          </a>
+          <p class="wm-footer__description">
+            AI Products Built for Real-World Scale. We design and build proprietary AI platforms focused on automation, intelligence, and scalable deployment.
+          </p>
+          <div class="wm-footer__social">
+            <a href="#" class="wm-footer__social-link" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="wm-footer__social-link" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="wm-footer__social-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="wm-footer__social-link" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Platforms Column -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="wm-footer__heading">Platforms</h5>
+          <ul class="wm-footer__links">
+            <li><a href="pages/automation.html" class="wm-footer__link">AI Automation</a></li>
+            <li><a href="pages/microsaas.html" class="wm-footer__link">AI Micro-SaaS</a></li>
+            <li><a href="pages/aaas.html" class="wm-footer__link">AI as a Service</a></li>
+            <li><a href="pages/content-studio.html" class="wm-footer__link">Content Studio</a></li>
+          </ul>
+        </div>
+        
+        <!-- Products Column -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="wm-footer__heading">Products</h5>
+          <ul class="wm-footer__links">
+            <li><a href="pages/consulting.html" class="wm-footer__link">AI Strategy Platform</a></li>
+            <li><a href="pages/training.html" class="wm-footer__link">AI Training</a></li>
+            <li><a href="pages/marketplace.html" class="wm-footer__link">AI Marketplace</a></li>
+            <li><a href="pages/runbooks.html" class="wm-footer__link">AI Runbooks</a></li>
+          </ul>
+        </div>
+        
+        <!-- Company Column -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="wm-footer__heading">Company</h5>
+          <ul class="wm-footer__links">
+            <li><a href="#about" class="wm-footer__link">About Us</a></li>
+            <li><a href="#" class="wm-footer__link">Careers</a></li>
+            <li><a href="#" class="wm-footer__link">Blog</a></li>
+            <li><a href="#contact" class="wm-footer__link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal Column -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="wm-footer__heading">Legal</h5>
+          <ul class="wm-footer__links">
+            <li><a href="#" class="wm-footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="wm-footer__link">Terms of Service</a></li>
+            <li><a href="#" class="wm-footer__link">Cookie Policy</a></li>
+            <li><a href="#" class="wm-footer__link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="wm-footer__bottom">
+        <p class="wm-footer__copyright">
+          &copy; 2026 WiseMount. All rights reserved.
+        </p>
+        <div class="d-flex gap-4">
+          <span class="small" style="color: #ffffff;">
+            <i class="bi bi-heart-fill me-2" style="color: #e74c3c;"></i>
+            Love Tamil Nadu, Made in India 🇮🇳
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS (defer for performance) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  
+  <!-- Custom JS (defer for performance) -->
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

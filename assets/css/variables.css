@@ -1,0 +1,213 @@
+/**
+ * WiseMount — CSS Custom Properties (Variables)
+ * Brand colors, typography, spacing, and design tokens
+ * 
+ * @version 1.0.0
+ * @date 2026-01-13
+ */
+
+:root {
+  /* ═══════════════════════════════════════════════════════════════
+     BRAND GRADIENT (Derived from Logo)
+     Blue → Purple → Orange
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-gradient-blue: #2563eb;
+  --wm-gradient-blue-light: #3b82f6;
+  --wm-gradient-purple: #8b5cf6;
+  --wm-gradient-purple-deep: #7c3aed;
+  --wm-gradient-orange: #f97316;
+  --wm-gradient-orange-light: #fb923c;
+
+  /* Primary Brand Gradient */
+  --wm-gradient-primary: linear-gradient(135deg, 
+    var(--wm-gradient-blue) 0%, 
+    var(--wm-gradient-purple) 50%, 
+    var(--wm-gradient-orange) 100%
+  );
+
+  /* Horizontal variant */
+  --wm-gradient-horizontal: linear-gradient(90deg, 
+    var(--wm-gradient-blue) 0%, 
+    var(--wm-gradient-purple) 50%, 
+    var(--wm-gradient-orange) 100%
+  );
+
+  /* Vertical variant */
+  --wm-gradient-vertical: linear-gradient(180deg, 
+    var(--wm-gradient-blue) 0%, 
+    var(--wm-gradient-purple) 50%, 
+    var(--wm-gradient-orange) 100%
+  );
+
+  /* ═══════════════════════════════════════════════════════════════
+     BACKGROUND COLORS (Dark Theme)
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-bg-primary: #0a0a12;       /* Deepest background */
+  --wm-bg-secondary: #0f0f1a;     /* Main background */
+  --wm-bg-tertiary: #1a1a2e;      /* Elevated surfaces */
+  --wm-bg-card: #1e1e32;          /* Cards, modals */
+  --wm-bg-elevated: #252542;      /* Highest elevation */
+  --wm-bg-hover: #2a2a4a;         /* Hover states */
+
+  /* ═══════════════════════════════════════════════════════════════
+     TEXT COLORS
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-text-primary: #ffffff;
+  --wm-text-secondary: #b0b0c0;
+  --wm-text-muted: #7a7a8c;
+  --wm-text-subtle: #5a5a6c;
+
+  /* ═══════════════════════════════════════════════════════════════
+     ACCENT COLORS
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-accent-blue: #3b82f6;
+  --wm-accent-purple: #8b5cf6;
+  --wm-accent-orange: #fb923c;
+  --wm-accent-success: #22c55e;
+  --wm-accent-warning: #eab308;
+  --wm-accent-error: #ef4444;
+
+  /* ═══════════════════════════════════════════════════════════════
+     BORDER COLORS
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-border-subtle: rgba(255, 255, 255, 0.08);
+  --wm-border-light: rgba(255, 255, 255, 0.12);
+  --wm-border-medium: rgba(255, 255, 255, 0.18);
+  --wm-border-accent: rgba(139, 92, 246, 0.4);
+  --wm-border-gradient: linear-gradient(135deg, 
+    rgba(37, 99, 235, 0.5), 
+    rgba(139, 92, 246, 0.5), 
+    rgba(249, 115, 22, 0.5)
+  );
+
+  /* ═══════════════════════════════════════════════════════════════
+     TYPOGRAPHY
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --wm-font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --wm-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Font Sizes (Fluid) */
+  --wm-text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --wm-text-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+  --wm-text-base: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
+  --wm-text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --wm-text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --wm-text-2xl: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  --wm-text-3xl: clamp(1.875rem, 1.5rem + 1.5vw, 2.5rem);
+  --wm-text-4xl: clamp(2.25rem, 1.8rem + 2vw, 3.5rem);
+  --wm-text-5xl: clamp(3rem, 2.2rem + 3vw, 4.5rem);
+  --wm-text-6xl: clamp(3.375rem, 2.25rem + 3.6vw, 5.4rem);
+
+  /* Font Weights */
+  --wm-font-light: 300;
+  --wm-font-normal: 400;
+  --wm-font-medium: 500;
+  --wm-font-semibold: 600;
+  --wm-font-bold: 700;
+  --wm-font-extrabold: 800;
+
+  /* Line Heights */
+  --wm-leading-none: 1;
+  --wm-leading-tight: 1.2;
+  --wm-leading-snug: 1.375;
+  --wm-leading-normal: 1.5;
+  --wm-leading-relaxed: 1.625;
+  --wm-leading-loose: 2;
+
+  /* Letter Spacing */
+  --wm-tracking-tighter: -0.05em;
+  --wm-tracking-tight: -0.025em;
+  --wm-tracking-normal: 0;
+  --wm-tracking-wide: 0.025em;
+  --wm-tracking-wider: 0.05em;
+  --wm-tracking-widest: 0.1em;
+
+  /* ═══════════════════════════════════════════════════════════════
+     SPACING (8px Grid)
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-space-1: 0.25rem;   /* 4px */
+  --wm-space-2: 0.5rem;    /* 8px */
+  --wm-space-3: 0.75rem;   /* 12px */
+  --wm-space-4: 1rem;      /* 16px */
+  --wm-space-5: 1.25rem;   /* 20px */
+  --wm-space-6: 1.5rem;    /* 24px */
+  --wm-space-8: 2rem;      /* 32px */
+  --wm-space-10: 2.5rem;   /* 40px */
+  --wm-space-12: 3rem;     /* 48px */
+  --wm-space-16: 4rem;     /* 64px */
+  --wm-space-20: 5rem;     /* 80px */
+  --wm-space-24: 6rem;     /* 96px */
+  --wm-space-32: 8rem;     /* 128px */
+
+  /* Section Spacing */
+  --wm-section-padding-y: clamp(4rem, 8vw, 8rem);
+  --wm-section-padding-x: clamp(1rem, 5vw, 2rem);
+
+  /* ═══════════════════════════════════════════════════════════════
+     BORDER RADIUS
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-radius-sm: 0.25rem;    /* 4px */
+  --wm-radius-md: 0.5rem;     /* 8px */
+  --wm-radius-lg: 0.75rem;    /* 12px */
+  --wm-radius-xl: 1rem;       /* 16px */
+  --wm-radius-2xl: 1.5rem;    /* 24px */
+  --wm-radius-full: 9999px;
+
+  /* ═══════════════════════════════════════════════════════════════
+     SHADOWS
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --wm-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --wm-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+  --wm-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.3), 0 8px 10px rgba(0, 0, 0, 0.2);
+  --wm-shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.4);
+  --wm-shadow-glow-blue: 0 0 20px rgba(59, 130, 246, 0.4);
+  --wm-shadow-glow-purple: 0 0 20px rgba(139, 92, 246, 0.4);
+  --wm-shadow-glow-orange: 0 0 20px rgba(249, 115, 22, 0.4);
+  --wm-shadow-glow-gradient: 
+    0 0 20px rgba(59, 130, 246, 0.2),
+    0 0 40px rgba(139, 92, 246, 0.2),
+    0 0 60px rgba(249, 115, 22, 0.1);
+
+  /* ═══════════════════════════════════════════════════════════════
+     TRANSITIONS
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-transition-fast: 150ms ease;
+  --wm-transition-normal: 250ms ease;
+  --wm-transition-slow: 400ms ease;
+  --wm-transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ═══════════════════════════════════════════════════════════════
+     Z-INDEX SCALE
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-z-below: -1;
+  --wm-z-base: 0;
+  --wm-z-above: 1;
+  --wm-z-dropdown: 100;
+  --wm-z-sticky: 200;
+  --wm-z-fixed: 300;
+  --wm-z-modal-backdrop: 400;
+  --wm-z-modal: 500;
+  --wm-z-popover: 600;
+  --wm-z-tooltip: 700;
+
+  /* ═══════════════════════════════════════════════════════════════
+     BREAKPOINTS (Reference Only - Use Bootstrap)
+     ═══════════════════════════════════════════════════════════════ */
+  /* 
+   * xs: 0
+   * sm: 576px
+   * md: 768px
+   * lg: 992px
+   * xl: 1200px
+   * xxl: 1400px
+   */
+
+  /* ═══════════════════════════════════════════════════════════════
+     ANGULAR SECTION ANGLES (Logo-Inspired)
+     ═══════════════════════════════════════════════════════════════ */
+  --wm-angle-sm: 2deg;
+  --wm-angle-md: 3deg;
+  --wm-angle-lg: 4deg;
+}
